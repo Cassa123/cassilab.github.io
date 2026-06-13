@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cassandri Labuschagne — Intermediate Software Developer specialising in Angular, Java, Spring Boot and AWS."
+    />
+    <title>Cassandri Labuschagne — Software Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/cass_logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3539a49317.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about" onclick="closeMobileNav()">About</a>
+      <a href="#work" onclick="closeMobileNav()">Work</a>
+      <a href="#experience" onclick="closeMobileNav()">Experience</a>
+      <a href="#skills" onclick="closeMobileNav()">Skills</a>
+      <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    </nav>
+
+    <!-- ── NAV ──────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+      <a href="#home" class="nav-logo">Cassi<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="nav-theme">
+        <i class="fa-regular fa-sun fa-xl sun-icon"></i>
+        <i class="fa-regular fa-moon fa-xl moon-icon"></i>
+      </button>
+      <div
+        class="nav-hamburger"
+        id="hamburger"
+        onclick="toggleMobileNav()"
+        aria-label="Menu"
+      >
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="home">
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-label hero-in">
+            Software Developer · Centurion, South Africa
+          </div>
+          <span class="hero-name hero-in" style="animation-delay: 350ms">
+            Cassandri<br />Labuschagne
+          </span>
+          <p class="hero-subtitle hero-in" style="animation-delay: 500ms">
+            Enterprise developer.<br />Getting things done, mostly on purpose.
+          </p>
+          <p class="hero-bio hero-in" style="animation-delay: 640ms">
+            Building Angular frontends and Spring Boot backends for systems that
+            people actually rely on. AWS-certified, detail-oriented, and
+            experienced enough to know what I don't know —
+            <em>which turns out to be useful.</em>
+          </p>
+          <div class="hero-actions hero-in" style="animation-delay: 760ms">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <a
+              href="assets/files/Cassandri Labuschagne - 0102080069085.pdf"
+              download
+              class="btn btn-tertiary"
+              >Download CV</a
+            >
+          </div>
+          <div class="hero-tags hero-in" style="animation-delay: 880ms">
+            <span class="badge badge-accent">Angular</span>
+            <span class="badge badge-accent">Java</span>
+            <span class="badge badge-accent">Spring Boot</span>
+            <span class="badge badge-neutral">AWS Certified ✓</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <section id="about">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">01 / About</span>
+          <div class="eyebrow-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <blockquote class="about-quote reveal">
+              "I write code for a living and spend the rest of the time figuring
+              out what I don't know yet."
+            </blockquote>
+            <p class="t-body reveal d-100">
+              My journey into software development didn't start with fancy
+              frameworks or modern ecosystems. My first role at W3 Technologies
+              had me building front-end applications using nothing but PHP,
+              HTML, and CSS. Back then, Angular, Spring Boot, and cloud
+              architecture were mysterious creatures I'd only heard whispers
+              about.
+            </p>
+            <p class="t-body reveal d-200" style="margin-top: 1.25rem">
+              Fast forward a few years, and I've transformed into an
+              Intermediate Software Developer at Ideal Solution, where I dive
+              headfirst into Angular, Java, Spring Boot, TypeScript, APIs,
+              orchestration layers, AWS, and software architecture. Every day
+              feels like solving puzzles — which suits me perfectly, because I
+              genuinely enjoy figuring out how things work, and more
+              importantly, how they might break.
+            </p>
+            <p class="t-body reveal d-300" style="margin-top: 1.25rem">
+              I work carefully, ask the right questions before they become the
+              wrong problems, and have a reasonable track record of catching
+              things that probably shouldn't make it to production. I'm still
+              learning — but deliberately, which I think counts for something.
+            </p>
+          </div>
+
+          <div>
+            <div class="stats-grid reveal d-100">
+              <div class="stat-card">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects at Ideal Solution</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">D*</span>
+                <span class="stat-label"
+                  >Damelin Distinction — all modules</span
+                >
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Industry Certifications</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Edge cases spotted</span>
+              </div>
+            </div>
+
+            <div class="reveal d-200">
+              <p class="t-mono" style="margin-bottom: 0.75rem">
+                // Languages spoken
+              </p>
+              <div class="badge-row">
+                <span class="badge badge-neutral">Afrikaans (Native)</span>
+                <span class="badge badge-neutral">English (Fluent)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WORK ───────────────────────────────────────────── -->
+    <section id="work">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">02 / Work at Ideal Solution</span>
+          <div class="eyebrow-line"></div>
+        </div>
+
+        <p class="t-body reveal" style="max-width: 560px; margin-bottom: 3rem">
+          A selection of projects I contributed to as a Software Developer at
+          Ideal Solution. Each one taught me something new — from leaderboard
+          systems to payment gateways to iOS exploration.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Kaizen — large -->
+          <div class="project-card reveal">
+            <div>
+              <div class="project-header">
+                <div>
+                  <h3 class="t-card-title" style="margin-top: 0.25rem">
+                    Kaizen
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <p class="project-desc">
+              A Jira-integrated platform that gamified the Software Development
+              Lifecycle (SDLC), transforming ticket completion into measurable
+              achievements, rankings, and performance insights. The platform
+              provided developers and teams with visibility into their
+              contributions through competitive leaderboards.
+            </p>
+            <div>
+              <p class="project-desc">Key Contributions:</p>
+              <ul class="project-contributions">
+                <li>
+                  Redesigned the frontend experience to improve usability and
+                  readability
+                </li>
+                <li>
+                  Implemented weekly, monthly, and yearly leaderboards for both
+                  developers and teams, providing visibility into performance
+                  trends over time.
+                </li>
+                <li>
+                  Built an automated scheduling and notification system that
+                  delivers weekly and monthly leaderboard standings and score
+                  summaries via email.
+                </li>
+                <li>
+                  Integrated with Jira webhooks to capture ticket lifecycle
+                  events, automatically detecting when issues transitioned to a
+                  completed state and processing associated story points for
+                  leaderboard scoring and performance tracking.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-row">
+              <span class="badge badge-accent">Angular</span>
+              <span class="badge badge-accent">Java</span>
+              <span class="badge badge-accent">TypeScript</span>
+              <span class="badge badge-accent">Spring Boot</span>
+              <span class="badge badge-neutral">Jira API</span>
+              <span class="badge badge-neutral">Webhooks</span>
+            </div>
+          </div>
+
+          <!-- Glimmer -->
+          <div class="project-card reveal d-100">
+            <div>
+              <div class="project-header">
+                <div>
+                  <h3 class="t-card-title" style="margin-top: 0.25rem">
+                    Glimmer
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Glimmer is Paycorp Group's digital merchant onboarding platform,
+              delivering a mobile-first onboarding experience for POS acquiring
+              merchants. Built to support both sole proprietors and complex
+              company structures, the platform enables an onboarding journey
+              with a target turnaround time of under 15 minutes.
+            </p>
+            <div>
+              <p class="project-desc">Key Contributions:</p>
+              <ul class="project-contributions">
+                <li>
+                  Architected and delivered the complete, fully responsive,
+                  frontend onboarding experience using Syncfusion Angular
+                  component library.
+                </li>
+                <li>
+                  Integrated the Sybrin SDK to support identity verification,
+                  screening, address validation, and AVS checks as part of the
+                  compliance process.
+                </li>
+                <li>
+                  Developed a scalable white-label solution, enabling ISO
+                  partners to customize branding and merchant-facing
+                  experiences.
+                </li>
+                <li>
+                  Implemented workflow controls and validation mechanisms to
+                  protect onboarding data integrity and reduce opportunities for
+                  fraudulent submissions.
+                </li>
+                <li>
+                  Extended contributions beyond the frontend by supporting
+                  backend development, resolving bugs, and implementing new
+                  platform features.
+                </li>
+                <li>
+                  Executed SQL update queries to prepare and modify data within
+                  testing environments.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-row">
+              <span class="badge badge-accent">Angular</span>
+              <span class="badge badge-accent">Java</span>
+              <span class="badge badge-accent">TypeScript</span>
+              <span class="badge badge-accent">Spring Boot</span>
+              <span class="badge badge-neutral">SDK</span>
+              <span class="badge badge-neutral">Syncfusion</span>
+            </div>
+          </div>
+
+          <!-- Payments -->
+          <div class="project-card reveal d-200">
+            <div>
+              <div class="project-header">
+                <div>
+                  <h3 class="t-card-title" style="margin-top: 0.25rem">
+                    Payments Hub
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <p class="project-desc">
+              A payment processing hub that centralizes merchant settlements,
+              automates payment routing, and enables flexible rule-based
+              transaction handling.
+            </p>
+            <div>
+              <p class="project-desc">Key Contributions:</p>
+              <ul class="project-contributions">
+                <li>
+                  Architected and delivered the base structure of the Payments
+                  Hub portal using Syncfusion Angular component library.
+                </li>
+                <li>
+                  Integrated Microsoft Active Directory (Azure AD)
+                  authentication, enabling secure single sign-on (SSO) access
+                  for internal users.
+                </li>
+                <li>
+                  Extended contributions beyond the frontend by supporting
+                  backend development, resolving bugs, and implementing new
+                  platform features.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-row">
+              <span class="badge badge-accent">Angular</span>
+              <span class="badge badge-accent">Java</span>
+              <span class="badge badge-accent">TypeScript</span>
+              <span class="badge badge-accent">Spring Boot</span>
+              <span class="badge badge-neutral">Microsoft AD</span>
+              <span class="badge badge-neutral">Syncfusion</span>
+            </div>
+          </div>
+
+          <!-- Coffee App / iOS -->
+          <div class="project-card reveal d-100">
+            <div>
+              <div class="project-header">
+                <div>
+                  <h3 class="t-card-title" style="margin-top: 0.25rem">
+                    Coffee / Brewflow App
+                  </h3>
+                </div>
+                <span class="project-arrow">↗</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Brewflow is a platform that enables digital ordering, queue
+              orchestration, and operational efficiency for beverage shops,
+              starting with coffee retailers and designed for broader retail
+              applications. Built for flexibility and scale, the system supports
+              multi-tenant, multi-store deployments with integrated POS, mobile
+              ordering, and staff workflows.
+            </p>
+            <div>
+              <p class="project-desc">Key Contributions:</p>
+              <ul class="project-contributions">
+                <li>
+                  Developed the iOS POS application used by retail staff to
+                  view, manage, and fulfill incoming customer orders.
+                </li>
+                <li>
+                  Collaborated on database design and architecture, defining
+                  entity relationships and data models to support order
+                  management, store operations, and multi-tenant functionality.
+                </li>
+                <li>
+                  Contributed to the setup and configuration of AWS
+                  infrastructure, supporting the deployment and operation of the
+                  platform.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-row">
+              <span class="badge badge-accent">Java</span>
+              <span class="badge badge-neutral">iOS</span>
+              <span class="badge badge-neutral">Mobile</span>
+              <span class="badge badge-neutral">AWS</span>
+            </div>
+          </div>
+
+          <!-- King Price -->
+          <div class="project-card reveal d-200">
+            <div>
+              <div class="project-header">
+                <div>
+                  <h3 class="t-card-title" style="margin-top: 0.25rem">
+                    Transaction Junction - Internet Payment Gateway
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <p class="project-desc">
+              A leading FinTech company that provides a modern transaction
+              platform to businesses across numerous industries.
+            </p>
+            <div>
+              <p class="project-desc">Key Contributions:</p>
+              <ul class="project-contributions">
+                <li>
+                  Contributed to the implementation of Apple Pay as a new
+                  payment method, supporting the expansion of the platform's
+                  digital payment capabilities.
+                </li>
+                <li>
+                  Resolved support tickets and investigated production issues,
+                  working closely with QA teams to diagnose and fix defects
+                  identified during testing.
+                </li>
+                <li>
+                  Refactored database access layers by converting native SQL
+                  queries to Hibernate Query Language (HQL), improving
+                  maintainability and alignment with application standards.
+                </li>
+                <li>
+                  Redeveloped the Merchant Portal frontend using React,
+                  modernizing the user interface and improving usability,
+                  responsiveness, and overall user experience.
+                </li>
+              </ul>
+            </div>
+            <div class="badge-row">
+              <span class="badge badge-accent">Java</span>
+              <span class="badge badge-accent">Spring Boot</span>
+              <span class="badge badge-neutral">React</span>
+              <span class="badge badge-neutral">HQL</span>
+              <span class="badge badge-neutral">SQL Native Queries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE + EDUCATION ─────────────────────────── -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">03 / Experience & Education</span>
+          <div class="eyebrow-line"></div>
+        </div>
+
+        <div class="exp-grid">
+          <!-- Timeline -->
+          <div>
+            <p class="t-mono reveal" style="margin-bottom: 1.5rem">
+              // Career path
+            </p>
+            <div class="timeline">
+              <div class="tl-item reveal">
+                <div class="tl-track">
+                  <div class="tl-dot"></div>
+                  <div class="tl-line active"></div>
+                </div>
+                <div class="tl-body">
+                  <p class="tl-date">Feb 2026 - Present</p>
+                  <p class="tl-role">Intermediate Software Developer</p>
+                  <p class="tl-company">Ideal Solution</p>
+                  <p class="tl-desc">
+                    Developed and maintained software solutions across a diverse
+                    range of projects, leveraging modern frontend, backend,
+                    mobile, cloud, and database technologies. Collaborated
+                    throughout the software development lifecycle, from
+                    requirements gathering and architecture discussions to
+                    implementation, testing, deployment, and ongoing support.
+                  </p>
+                </div>
+              </div>
+              <div class="tl-item reveal">
+                <div class="tl-track">
+                  <div class="tl-dot past"></div>
+                  <div class="tl-line past"></div>
+                </div>
+                <div class="tl-body">
+                  <p class="tl-date">Feb 2024 - Feb 2026</p>
+                  <p class="tl-role">Junior Software Developer</p>
+                  <p class="tl-company">Ideal Solution</p>
+                  <p class="tl-desc">
+                    Contributed to the development and maintenance of enterprise
+                    software solutions, gaining experience across frontend,
+                    backend, database, and cloud technologies while
+                    collaborating with cross-functional teams to deliver client
+                    projects.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tl-item reveal d-100">
+                <div class="tl-track">
+                  <div class="tl-dot past"></div>
+                  <div class="tl-line past"></div>
+                </div>
+                <div class="tl-body">
+                  <p class="tl-date">2023</p>
+                  <p class="tl-role">
+                    Junior Developer and Technical Assistant
+                  </p>
+                  <p class="tl-company">W3 Technologies</p>
+                  <p class="tl-desc">
+                    Built client-facing front-end applications using PHP, HTML,
+                    and CSS. My starting point — no frameworks, pure
+                    fundamentals. The foundation that made everything else
+                    possible. Provided on-site technical support during dance
+                    competitions, assisting judges with the competition
+                    management system, troubleshooting issues, and ensuring the
+                    smooth operation of scoring and event workflows.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tl-item reveal d-200">
+                <div class="tl-track">
+                  <div class="tl-dot past"></div>
+                  <div class="tl-line past"></div>
+                </div>
+                <div class="tl-body">
+                  <p class="tl-date">Aug - Dec 2022</p>
+                  <p class="tl-role">Software Development Intern</p>
+                  <p class="tl-company">Safer South Africa Foundation</p>
+                  <p class="tl-desc">
+                    Worked on WordPress-based web solutions, contributing to
+                    website customization, content management, plugin
+                    configuration, and general site maintenance while gaining
+                    experience in professional development workflows.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <p class="t-mono reveal" style="margin-bottom: 1.5rem">
+              // Academic background
+            </p>
+            <div class="edu-grid">
+              <div
+                class="edu-card edu-card-featured reveal"
+                style="grid-column: span 2"
+              >
+                <div class="edu-badge">Top Student · All Distinctions</div>
+                <h3 class="t-card-title">Damelin College</h3>
+                <p
+                  class="t-small"
+                  style="margin-top: 0.25rem; margin-bottom: 1.25rem"
+                >
+                  Diploma in Information Technology · 2020-2022 · Graduated
+                  April 2023
+                </p>
+                <div>
+                  <div class="grade-row">
+                    <span class="grade-subject"
+                      >Software Engineering 1A (exam)</span
+                    ><span class="grade-pct">100%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Programming 3A (C#)</span
+                    ><span class="grade-pct">98%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Information Systems 1A</span
+                    ><span class="grade-pct">96%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject"
+                      >Document Analysis &amp; Design</span
+                    ><span class="grade-pct">94%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Java Programming</span
+                    ><span class="grade-pct">89-90%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Linux</span
+                    ><span class="grade-pct">85%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edu-card reveal d-100" style="grid-column: span 2">
+                <h3 class="t-card-title">Hoërskool Centurion</h3>
+                <p
+                  class="t-small"
+                  style="margin-top: 0.25rem; margin-bottom: 1rem"
+                >
+                  National Senior Certificate · 2015-2019 · Academic team 5
+                  years
+                </p>
+                <div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Physical Sciences</span
+                    ><span class="grade-pct">88%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Life Sciences</span
+                    ><span class="grade-pct">85%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Information Technology</span
+                    ><span class="grade-pct">83%</span>
+                  </div>
+                  <div class="grade-row">
+                    <span class="grade-subject">Mathematics</span
+                    ><span class="grade-pct">70%</span>
+                  </div>
+                </div>
+              </div>
+              <button role="button" class="dropdown reveal">
+                <span class="dropdown-label">
+                  Download <i class="fa-solid fa-angle-down"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="assets/files/Academic Transcripts.pdf" download
+                      >Academic Transcripts</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="assets/files/Damelin_Diploma.pdf" download
+                      >Damelin Diploma</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="assets/files/Damelin_Certificate.pdf" download
+                      >Certificate</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      href="assets/files/Matric Certificate and First Year Results.pdf"
+                      download
+                      >National Senior Certificate</a
+                    >
+                  </li>
+                </ul>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">04 / Skills & Technical Stack</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <i
+                class="fa-brands fa-html5 fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Front End
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">Angular</div>
+              <div class="skills-badge">Angular Material UI</div>
+              <div class="skills-badge">Syncfusion</div>
+              <div class="skills-badge">RxJS</div>
+              <div class="skills-badge">JavaScript</div>
+              <div class="skills-badge">TypeScript</div>
+              <div class="skills-badge">React</div>
+              <div class="skills-badge">HTML</div>
+              <div class="skills-badge">CSS</div>
+              <div class="skills-badge">SASS</div>
+              <div class="skills-badge">Tailwind CSS</div>
+              <div class="skills-badge">Daisy UI</div>
+            </div>
+          </div>
+          <div class="skill-group reveal d-100">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-code fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Back End
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">Java</div>
+              <div class="skills-badge">Spring Boot</div>
+              <div class="skills-badge">C#</div>
+              <div class="skills-badge">Visual Basic</div>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-database fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Databases
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">PostgreSQL</div>
+              <div class="skills-badge">MySQL</div>
+              <div class="skills-badge">SQL Native</div>
+              <div class="skills-badge">HQL</div>
+            </div>
+          </div>
+          <div class="skill-group reveal d-100">
+            <div class="skill-group-title">
+              <i
+                class="fa-brands fa-aws fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Cloud
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">AWS</div>
+              <div class="skills-badge">EC2</div>
+              <div class="skills-badge">ECS</div>
+              <div class="skills-badge">S3</div>
+              <div class="skills-badge">Cognito</div>
+              <div class="skills-badge">API Gateway</div>
+              <div class="skills-badge">Azure</div>
+              <div class="skills-badge">Jira</div>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-gears fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              DevOps
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">Docker</div>
+              <div class="skills-badge">Bitbucket</div>
+            </div>
+          </div>
+          <div class="skill-group reveal d-100">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-plug fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Integration
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">REST APIs</div>
+              <div class="skills-badge">Microservices</div>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-screwdriver-wrench fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Tools
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">Postman</div>
+              <div class="skills-badge">IntelliJ</div>
+              <div class="skills-badge">Visual Studio</div>
+              <div class="skills-badge">VS Code</div>
+            </div>
+          </div>
+          <div class="skill-group reveal d-100">
+            <div class="skill-group-title">
+              <i
+                class="fa-solid fa-brain fa-sm"
+                style="color: var(--accent)"
+              ></i>
+              Proffessional Skills
+            </div>
+            <div class="skill-group-items">
+              <div class="skills-badge">Edge-case thinking</div>
+              <div class="skills-badge">Problem Solving</div>
+              <div class="skills-badge">Mentoring & Knowledge Sharing</div>
+              <div class="skills-badge">Team Collaboration</div>
+              <div class="skills-badge">Dedicated and Motivated</div>
+              <div class="skills-badge">Adaptability</div>
+              <div class="skills-badge">Analytical</div>
+              <div class="skills-badge">Collaborative</div>
+              <div class="skills-badge">Self-directed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">05 / Certifications and Awards</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <a
+              href="https://www.credly.com/badges/63f32c56-b642-4c3e-8b18-76f00e81226b/linked_in_profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/images/aws-certified-cloud-practitioner.png"
+                alt="AWS Certified Cloud Practitioner badge"
+                class="cert-img"
+              />
+            </a>
+            <div>
+              <h3 class="t-card-title" style="font-size: 1.125rem">
+                Cloud Practitioner
+              </h3>
+              <p class="t-small" style="margin-top: 0.25rem">
+                Amazon Web Services
+              </p>
+              <div class="cert-verified">
+                <a
+                  href="https://www.credly.com/badges/63f32c56-b642-4c3e-8b18-76f00e81226b/linked_in_profile"
+                  target="_blank"
+                  rel="noopener"
+                  style="
+                    color: #6b8f6e;
+                    text-decoration: none;
+                    font-family: var(--font-mono);
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.25rem;
+                  "
+                >
+                  <i class="fa-solid fa-check"></i> Verified on Credly
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card reveal d-100">
+            <a onclick="rookieDialog.showModal()">
+              <img
+                src="assets/images/rookie_of_the_year.jpeg"
+                alt="Rookie of the Year award"
+                class="cert-img"
+              />
+            </a>
+            <div>
+              <h3 class="t-card-title" style="font-size: 1.125rem">
+                Rookie of the Year
+              </h3>
+              <p class="t-small" style="margin-top: 0.25rem">
+                Ideal Solution · November 2024
+              </p>
+              <p class="t-small" style="margin-top: 0.375rem">
+                Company-wide recognition for outstanding contribution in the
+                first year.
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal d-200">
+            <div class="cert-icon">D*</div>
+            <div>
+              <h3 class="t-card-title" style="font-size: 1.125rem">
+                Academic Distinction
+              </h3>
+              <p class="t-small" style="margin-top: 0.25rem">
+                Damelin College · 2020-2022
+              </p>
+              <p class="t-small" style="margin-top: 0.375rem">
+                Top student in field. D* across all modules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GROWTH AREAS ───────────────────────────────────── -->
+    <section id="growth">
+      <div class="container">
+        <div class="growth-inner reveal">
+          <div class="growth-intro">
+            <p class="t-mono" style="margin-bottom: 0.75rem">
+              // Still growing in
+            </p>
+            <h3 class="t-section-title" style="font-size: 1.875rem">
+              Honest about<br />the gaps.
+            </h3>
+            <p class="t-body" style="margin-top: 1rem; font-size: 0.9375rem">
+              I believe the most trustworthy developers know exactly what they
+              don't know yet. Here's mine — and what I'm doing about it.
+            </p>
+          </div>
+          <div class="growth-items">
+            <div class="growth-item">
+              <span class="growth-label">Testing</span>
+              <p
+                class="t-card-title"
+                style="font-size: 1rem; margin-bottom: 0.375rem"
+              >
+                JUnit & Test Coverage
+              </p>
+              <p class="t-small">
+                Familiar with the fundamentals. Actively deepening my
+                test-writing practice and aiming to own test coverage on my next
+                project.
+              </p>
+            </div>
+            <div class="growth-item">
+              <span class="growth-label">Mobile</span>
+              <p
+                class="t-card-title"
+                style="font-size: 1rem; margin-bottom: 0.375rem"
+              >
+                iOS Development
+              </p>
+              <p class="t-small">
+                Dipped into native iOS on the coffee app project. Enjoyed it.
+                Still early days — actively exploring Swift and mobile patterns.
+              </p>
+            </div>
+            <div class="growth-item">
+              <span class="growth-label">Cloud Depth</span>
+              <p
+                class="t-card-title"
+                style="font-size: 1rem; margin-bottom: 0.375rem"
+              >
+                AWS Solutions Architect
+              </p>
+              <p class="t-small">
+                Cloud Practitioner is the foundation. The next goal is AWS
+                Developer Associate — where the real compounding begins.
+              </p>
+            </div>
+            <div class="growth-item">
+              <span class="growth-label">Architecture</span>
+              <p
+                class="t-card-title"
+                style="font-size: 1rem; margin-bottom: 0.375rem"
+              >
+                System Design
+              </p>
+              <p class="t-small">
+                Strong on feature implementation. Actively building vocabulary
+                and judgment around distributed systems and system design at
+                scale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-eyebrow reveal">
+          <span class="eyebrow-label">06 / Contact</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <h2 class="t-section-title reveal">
+              Let's build<br />something together.
+            </h2>
+            <p class="t-body reveal d-100" style="margin-top: 1rem">
+              Whether you're hiring, collaborating, or have a system that needs
+              someone to quietly hold it together — feel free to reach out.
+            </p>
+            <div class="contact-links reveal d-200">
+              <a
+                href="mailto:cassandri132@gmail.com?subject=LinkedIn Enquiry"
+                class="contact-link"
+              >
+                <div class="contact-link-icon">
+                  <i class="fa-regular fa-envelope fa-sm"></i>
+                </div>
+                cassandri132@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/cassandri-labuschagne-243772210/"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                <div class="contact-link-icon">
+                  <i class="fa-brands fa-square-linkedin fa-sm"></i>
+                </div>
+                linkedin.com/in/cassandri-labuschagne
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-copy"
+            >© 2025 Cassandri Labuschagne — Built with intention.</span
+          >
+          <div class="footer-links">
+            <a
+              href="https://www.linkedin.com/in/cassandri-labuschagne-243772210/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.credly.com/badges/63f32c56-b642-4c3e-8b18-76f00e81226b/linked_in_profile"
+              target="_blank"
+              rel="noopener"
+              >AWS Badge</a
+            >
+            <a href="assets/Cassandri Labuschagne - 0102080069085.pdf" download
+              >Download CV</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              rel="noopener"
+              class="footer-sitemap"
+              >credits</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // NAV SCROLL EFFECT
+      const nav = document.getElementById("nav");
+      window.addEventListener(
+        "scroll",
+        () => {
+          nav.classList.toggle("scrolled", window.scrollY > 60);
+        },
+        { passive: true },
+      );
+
+      // ACTIVE LINK
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              navLinks.forEach((a) => a.classList.remove("active"));
+              const link = document.querySelector(
+                `.nav-links a[href="#${e.target.id}"]`,
+              );
+              if (link) link.classList.add("active");
+            }
+          });
+        },
+        { rootMargin: "-40% 0px -55% 0px" },
+      );
+
+      sections.forEach((s) => io.observe(s));
+
+      // CAUSE SOME PEOPLE CAN'T HANDLE THE LIGHT
+      const toggleBtn = document.getElementById("theme-toggle");
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.body.setAttribute("data-theme", savedTheme);
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (prefersDark) {
+          document.body.setAttribute("data-theme", "dark");
+        }
+      }
+      toggleBtn.addEventListener("click", () => {
+        const currentTheme = document.body.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        document.body.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+
+      // REVEAL ANIMATION
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              revealObserver.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08 },
+      );
+
+      document
+        .querySelectorAll(".reveal, .reveal-left")
+        .forEach((el) => revealObserver.observe(el));
+
+      // CARD GLOWY THING
+      document.querySelectorAll(".project-card").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const r = card.getBoundingClientRect();
+          const x = (((e.clientX - r.left) / r.width) * 100).toFixed(1) + "%";
+          const y = (((e.clientY - r.top) / r.height) * 100).toFixed(1) + "%";
+          card.style.setProperty("--mx", x);
+          card.style.setProperty("--my", y);
+        });
+      });
+
+      // MOBILE NAV
+      const mobileNav = document.getElementById("mobileNav");
+      const hamburger = document.getElementById("hamburger");
+      let navOpen = false;
+
+      function toggleMobileNav() {
+        navOpen = !navOpen;
+        mobileNav.classList.toggle("open", navOpen);
+        mobileNav.setAttribute("aria-hidden", !navOpen);
+        document.body.style.overflow = navOpen ? "hidden" : "";
+        const spans = hamburger.querySelectorAll("span");
+        if (navOpen) {
+          spans[0].style.transform = "translateY(6.5px) rotate(45deg)";
+          spans[1].style.opacity = "0";
+          spans[2].style.transform = "translateY(-6.5px) rotate(-45deg)";
+        } else {
+          spans.forEach((s) => {
+            s.style.transform = "";
+            s.style.opacity = "";
+          });
+        }
+      }
+
+      function closeMobileNav() {
+        if (navOpen) toggleMobileNav();
+      }
+
+      // DROPDOWN
+      const dropdown = document.querySelector(".dropdown");
+
+      const dropdownMenu = () => {
+        dropdown.classList.toggle("is-active");
+      };
+
+      dropdown.addEventListener("click", () => {
+        dropdownMenu();
+      });
+
+      // Hide when clicked outside the dropdown
+      window.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+          if (dropdown.classList.contains("is-active")) {
+            dropdownMenu();
+          }
+        }
+      });
+
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "80px",
+        duration: 2000,
+        reset: true,
+      });
+
+      sr.reveal("#home", {});
+    </script>
+
+    <dialog id="rookieDialog">
+      <div class="dialog-inner">
+        <header class="dialog-header">
+          <span class="t-mono">// Rookie of the Year</span>
+          <i
+            class="fa-solid fa-xmark dialog-close"
+            onclick="rookieDialog.close()"
+          ></i>
+        </header>
+        <div class="dialog-body">
+          <img
+            src="assets/images/rookie_of_the_year.jpeg"
+            alt="Rookie of the Year award"
+            class="dialog-img"
+          />
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
