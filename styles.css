@@ -70,6 +70,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -80,7 +99,7 @@ img {
   max-width: 100%;
 }
 
-/* NAVIGATION */
+/* Navigation */
 .nav {
   position: fixed;
   top: 0;
@@ -227,7 +246,7 @@ img {
     opacity 200ms;
 }
 
-/* ─── SECTION LAYOUT ──────────────────────────── */
+/* Sections */
 
 .container {
   max-width: var(--max-w);
@@ -326,7 +345,7 @@ section {
   transition-delay: 300ms;
 }
 
-/* BUTTONS */
+/* Button */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -379,7 +398,7 @@ section {
   transform: translateY(-2px);
 }
 
-/* DROPDOWN */
+/* Dropdown */
 .dropdown {
   position: relative;
   padding: 0.75rem 1rem;
@@ -434,7 +453,7 @@ section {
   transform: scaleY(1);
 }
 
-/* BADGES */
+/* Badges */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -471,6 +490,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-h);
@@ -745,7 +765,7 @@ section {
   padding-left: 18px;
 }
 
-/* EXPERIENCE TIMELINE */
+/* Experience Timeline */
 #experience {
   background: var(--surface);
 }
@@ -777,13 +797,13 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--secondary);
   flex-shrink: 0;
   margin-top: 3px;
 }
 
 .tl-dot.past {
-  background: var(--border-subtle);
+  background: var(--secondary-border);
   box-shadow: none;
 }
 
@@ -834,7 +854,7 @@ section {
   line-height: 1.65;
 }
 
-/* EDUCATION */
+/* Education */
 .edu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -898,8 +918,7 @@ section {
   color: var(--accent);
 }
 
-/* SKILLS */
-
+/* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -954,7 +973,7 @@ section {
   border: 1px solid var(--accent-border);
 }
 
-/* CERTIFICATIONS */
+/* Certs */
 #certifications {
   background: var(--surface);
 }
@@ -1024,7 +1043,7 @@ section {
   margin-top: 0.375rem;
 }
 
-/* DIALOG */
+/* Dilog / Popup */
 dialog {
   margin: auto;
   border: none;
@@ -1124,7 +1143,7 @@ dialog::backdrop {
   display: block;
 }
 
-/* CONTACT */
+/* Contact */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1221,7 +1240,7 @@ textarea.form-input {
   min-height: 120px;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
@@ -1262,7 +1281,36 @@ footer {
   opacity: 0.4;
 }
 
-/* RESPONSIVENESS */
+/* Mobile Nav */
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 499;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms var(--ease);
+}
+
+.mobile-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav a {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--secondary);
+  transition: color 200ms;
+}
+
+/* Responsive Design */
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -1315,33 +1363,4 @@ footer {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* MOBILE NAV OPEN */
-.mobile-nav {
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  z-index: 499;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 350ms var(--ease);
-}
-
-.mobile-nav.open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.mobile-nav a {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 2.5rem;
-  color: var(--secondary);
-  transition: color 200ms;
 }
