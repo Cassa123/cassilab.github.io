@@ -24,7 +24,7 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
-    <!-- Mobile nav -->
+    <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
       <a href="#about" onclick="closeMobileNav()">About</a>
       <a href="#work" onclick="closeMobileNav()">Work</a>
@@ -33,7 +33,6 @@
       <a href="#contact" onclick="closeMobileNav()">Contact</a>
     </nav>
 
-    <!-- ── NAV ──────────────────────────────────────────── -->
     <header class="nav" id="nav">
       <a href="#home" class="nav-logo">Cassi<span>.</span></a>
       <ul class="nav-links">
@@ -57,7 +56,7 @@
       </div>
     </header>
 
-    <!-- ── HERO ─────────────────────────────────────────── -->
+    <!-- Hero -->
     <section id="home">
       <div class="hero-background" aria-hidden="true"></div>
       <div class="container">
@@ -91,7 +90,7 @@
       </div>
     </section>
 
-    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <!-- About -->
     <section id="about">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -166,7 +165,7 @@
       </div>
     </section>
 
-    <!-- ── WORK ───────────────────────────────────────────── -->
+    <!-- Work -->
     <section id="work">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -181,7 +180,6 @@
         </p>
 
         <div class="projects-grid">
-          <!-- Kaizen — large -->
           <div class="project-card reveal">
             <div>
               <div class="project-header">
@@ -234,7 +232,6 @@
             </div>
           </div>
 
-          <!-- Glimmer -->
           <div class="project-card reveal d-100">
             <div>
               <div class="project-header">
@@ -296,7 +293,6 @@
             </div>
           </div>
 
-          <!-- Payments -->
           <div class="project-card reveal d-200">
             <div>
               <div class="project-header">
@@ -341,7 +337,6 @@
             </div>
           </div>
 
-          <!-- Coffee App / iOS -->
           <div class="project-card reveal d-100">
             <div>
               <div class="project-header">
@@ -387,7 +382,6 @@
             </div>
           </div>
 
-          <!-- King Price -->
           <div class="project-card reveal d-200">
             <div>
               <div class="project-header">
@@ -439,7 +433,7 @@
       </div>
     </section>
 
-    <!-- ── EXPERIENCE + EDUCATION ─────────────────────────── -->
+    <!-- Experience and Education -->
     <section id="experience">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -448,7 +442,6 @@
         </div>
 
         <div class="exp-grid">
-          <!-- Timeline -->
           <div>
             <p class="t-mono reveal" style="margin-bottom: 1.5rem">
               // Career path
@@ -535,7 +528,6 @@
             </div>
           </div>
 
-          <!-- Education -->
           <div>
             <p class="t-mono reveal" style="margin-bottom: 1.5rem">
               // Academic background
@@ -646,7 +638,7 @@
       </div>
     </section>
 
-    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <!-- Skills -->
     <section id="skills">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -791,7 +783,7 @@
       </div>
     </section>
 
-    <!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+    <!-- Certs -->
     <section id="certifications">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -879,7 +871,7 @@
       </div>
     </section>
 
-    <!-- ── GROWTH AREAS ───────────────────────────────────── -->
+    <!-- Growth -->
     <section id="growth">
       <div class="container">
         <div class="growth-inner reveal">
@@ -955,7 +947,7 @@
       </div>
     </section>
 
-    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="section-eyebrow reveal">
@@ -998,7 +990,7 @@
       </div>
     </section>
 
-    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-inner">
@@ -1034,7 +1026,7 @@
     </footer>
 
     <script>
-      // NAV SCROLL EFFECT
+      // Nav Scroll
       const nav = document.getElementById("nav");
       window.addEventListener(
         "scroll",
@@ -1044,7 +1036,7 @@
         { passive: true },
       );
 
-      // ACTIVE LINK
+      // Active Nav
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -1065,7 +1057,7 @@
 
       sections.forEach((s) => io.observe(s));
 
-      // CAUSE SOME PEOPLE CAN'T HANDLE THE LIGHT
+      // CAUSE SOME PEOPLE CAN'T HANDLE THE LIGHT - DARK THEME TOGGLE
       const toggleBtn = document.getElementById("theme-toggle");
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme) {
